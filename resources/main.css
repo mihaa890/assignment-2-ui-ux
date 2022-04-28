@@ -1,0 +1,214 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 1;
+    padding: 0 40px;
+}
+
+nav {
+    display: flex;
+}
+
+nav>a {
+    color: #283553;
+    text-decoration: none;
+    font-family: 'Khula', sans-serif;
+    font-weight: 600;
+    margin: 20px;
+    font-size: large;
+}
+
+.logo-image {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+main {
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+}
+
+section {
+    flex: 1 1 65%;
+}
+
+section .ux {
+    display: flex;
+    flex-direction: column;
+    color: #617d81;
+    font-family: 'Khula', sans-serif;
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 18px;
+    margin-top: 10rem;
+    margin-left: 5rem;
+}
+
+section .design {
+    display: flex;
+    flex-direction: column;
+    color: #ab9683;
+    font-family: 'Khula', sans-serif;
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 18px;
+    margin-left: 5rem;
+}
+
+section p {
+    color: #cccccc;
+    font-family: 'Khula', sans-serif;
+    margin-left: 5rem;
+    width: 45%;
+    font-size: 16px;
+}
+
+section .click-me-button {
+    width: 150px;
+    height: 40px;
+    color: white;
+    background-color: #617d81;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Khula', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin-left: 5rem;
+    margin-top: 3rem;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex: 1 1 35%;
+    position: relative;
+}
+
+aside .upper-section {
+    min-height: 70%;
+    position: relative;
+    display: flex;
+
+}
+
+aside .upper-section .illustration {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+aside .upper-section .illustration .right-image {
+    width: 100%;
+    object-fit: contain;
+    z-index: -1;
+}
+
+aside .upper-section .left {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+}
+
+aside .upper-section .right {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding-left: 30px;
+}
+
+aside .upper-section .business-plan {
+    background-color: #ab9683;
+    color: white;
+    text-align: center;
+    font-family: 'Khula', sans-serif;
+
+}
+
+aside .upper-section .left .business-project {
+    display: flex;
+    background-color: #617d81;
+    color: white;
+    height: 80%;
+    font-family: 'Khula', sans-serif;
+
+}
+
+aside .upper-section .left .business-project .business-project-text {
+    white-space: nowrap;
+    writing-mode: vertical-rl;
+    text-align: center;
+    opacity: 0.5;
+    font-family: 'Khula', sans-serif;
+
+}
+
+aside .upper-section .right .business-plan .business-plan-text {
+    opacity: 0.5;
+}
+
+aside .lower-section {
+    height: 30%;
+    color: #cccccc;
+    font-family: 'Khula', sans-serif;
+    font-size: 15px;
+    margin-top: 1rem;
+    word-spacing: -1px;
+}
+
+footer {
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #000807;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 100px;
+
+}
+
+footer>a {
+    color: #7f8382;
+    text-decoration: none;
+    font-family: 'Khula', sans-serif;
+    font-size: 25px;
+}
+
+footer>a:first-child {
+    margin-right: auto;
+}
+
+.sign-in-button {
+    height: auto;
+    text-align: center;
+    background-color: #617d81;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    margin: auto 0;
+    width: 100px;
+    height: 40px;
+    font-family: 'Khula', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    margin-left: 5rem;
+
+}
