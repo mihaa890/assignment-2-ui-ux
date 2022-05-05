@@ -30,10 +30,12 @@
         magna aliqua</p>
       <button class="click-me-button">Click me</button>
     </section>
+    <!-- acest element de interfata nu are rol semantic de sidebar,,noi in FE putem stiliza orice sa arate ca orice aproape, alegerea semantica totusi trebuie sa depinda de rolul in pagina. Ce avem aici are un rol visual si display minim de info, nu o sectiune interactiva pentru ce de obicei folosim un sidebar. Pentru ce nu se aplica si nu ai o corespondenta directa poti sa folosesti section sau div. Nu este neaparat gresit, doar un sfat de good practice in materie de semantica -->
     <aside>
       <div class="upper-section">
         <div class="left">
           <div class="business-project">
+            <!-- ierarhic, nu este corect sa punem h1 si aici. Foarte bine ai folosit mai sus, dar aici deja nu le mai putem considera c asi titluri, doar elemente de text. Poti sa folosesti div-uri in acest caz -->
             <h1 class="business-project-text">BUSINESS PROJECT</h1>
           </div>
         </div>
@@ -42,10 +44,11 @@
             <img class="right-image" src="../assets/illustration-buildings.jpg" alt="business-plan">
           </div>
           <div class="business-plan">
+            <!-- se aplica ce am scris mai sus la BUSINESS PROJECT -->
             <h1 class="business-plan-text">BUSINESS PLAN</h1>
           </div>
         </div>
-
+        <!-- atentie la prea multe randuri goale in cod, la un moment dat ingreuneaza cum citim codul -->
 
       </div>
       <div class="lower-section">
@@ -58,6 +61,7 @@
     </aside>
   </main>
   <footer>
+    <!-- puteai sa inglobezi si aici intr-un <nav> -->
     <a href="#trend">NEW TREND</a>
     <a href="#projects"> TREND PROJECTS</a>
     <a href="#statistics">BALANCED STATISTICS</a>

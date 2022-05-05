@@ -7,6 +7,7 @@ body {
     box-sizing: border-box;
 }
 
+/* nu e ok sa folosim pozitionarea cand nu avem nevoie, de obicei flow-ul nativ in layout este top-dow, right-left, aici era ok sa il stilizam pentru ca pozitia e corecta. nu e ok sa abuzam de pozitionare cand avem alte tehnici de layot precum spatiere, flex etc. */
 header {
     position: absolute;
     top: 0;
@@ -126,6 +127,7 @@ aside .upper-section .left {
     height: 100%;
 }
 
+/* Business Project si Business Plan nu sunt aliniate, ti-am atasat un screenshot. Iti sugerez aici pentru una din elementele din right sa folosesti pozitionarea absoluta fata de parinte relativ. */
 aside .upper-section .right {
     display: flex;
     flex-direction: column;
@@ -205,7 +207,9 @@ footer>a:first-child {
     color: white;
     margin: auto 0;
     width: 100px;
+    /* ai folosit de 2 ori height aici, e ok sa stergem ce vedem ca nu functioneaza cum ne asteptam */
     height: 40px;
+    /* font-family este repetitiv folosit pe fiecare element in parte,,daca trebuie modificat va trebui sa o faci in fiecare loc in parte, de aia e de preferat sa asignezi astfel de reguli de stil pe un element ierarhic, cel mai superior de obicei */
     font-family: 'Khula', sans-serif;
     font-weight: 400;
     font-size: 15px;
